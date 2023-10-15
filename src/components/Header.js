@@ -6,7 +6,7 @@ import classes from './Header.module.css';
 const Header = () => {
   const dispatch = useDispatch();
 
-  const isAuth = useSelector(state => state.auth.isAuthenticated);
+  const isAuth = useSelector((state) => state.auth.isAuthenticated);
 
   const logoutHandler = () => {
     dispatch(authActions.logout());
